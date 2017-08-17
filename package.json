@@ -1,0 +1,22 @@
+{
+   "name": "test01",
+   "version": "1.0.0",
+   "description": "API test for getting user list and login",
+   "scripts": {
+      "test": "mocha -t 120000",
+      "smoke": "mocha --grep '@smoke' || :",
+      "regression": "mocha --grep '@regression' || :",
+      "getUser": "mocha ./test/GetUser",
+      "loginTest": "mocha ./test/Login"
+   },
+   "repository": {
+    "type": "git",
+    "url": "git://github.com/kawaiau2/Hk01ApiTest.git"
+  },
+   "dependencies": {
+      "chai": "^3.5.0",
+      "mocha": "^3.2.0",
+      "supertest": "^3.0.0",
+      "co-mocha": "^1.1.3"
+   }
+}
