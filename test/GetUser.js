@@ -2,11 +2,12 @@
 require('../util/common');
 //requires
 let requestMethod = require('../util/requestMethod');
+let apiUsers = '/users';
 
 describe('Get User Test', function() {
 	describe('@smoke', function() {
 	    it('should return correct users list elements', Q.async(function*() {
-	    	let res = yield requestMethod.get('/users', {
+	    	let res = yield requestMethod.get(apiUsers, {
 	        	page: 3
 	        });
 
@@ -26,7 +27,7 @@ describe('Get User Test', function() {
 	    }));
 
 	    it('should return correct user', Q.async(function*() {
-	    	let res = yield requestMethod.get('/users/1');
+	    	let res = yield requestMethod.get(`${apiUsers}/1`);
 
 	        expect(res.body.data.id).eq(1);
 	        expect(res.body.data.first_name).eq("george");
@@ -39,7 +40,7 @@ describe('Get User Test', function() {
 	describe('@regression', function() {
 	    it('should return correct total page of users list', Q.async(function*() {
 	    	var perPage = 4;
-	    	let res = yield requestMethod.get('/users', {
+	    	let res = yield requestMethod.get(apiUsers, {
 	        	page: 3,
 	        	per_page: perPage
 	        });
