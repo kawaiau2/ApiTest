@@ -1,4 +1,4 @@
-Project Description: This are 4 test cases for the api test, which include
+Project Description: API test for https://reqres.in/ as follow
 
 1. should return correct users list elements
 2. should return correct user
