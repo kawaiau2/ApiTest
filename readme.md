@@ -8,11 +8,14 @@ Project Description: API test for https://reqres.in/ as follow
 6. should login unsuccessfully without passowrd
 7. should login unsuccessfully with wrong invalid Credentials
 
-Installation: npm install
+Installation:
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install node
+npm install
 
 Test execution:
 1. npm test: run all test
-2. npm run smoke: show all test result marked as smoke
-3. npm run regression: show all test result marked as regression
+2. npm run smoke: run all test result marked as smoke
+3. npm run regression: run all test result marked as regression
 4. npm run getUser: run get user test cases
 5. npm run loginTest: run login test cases
