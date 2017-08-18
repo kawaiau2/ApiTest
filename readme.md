@@ -9,9 +9,9 @@ Project Description: API test for https://reqres.in/ as follow
 7. should login unsuccessfully with wrong invalid Credentials
 
 Installation:
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install node
-npm install
+1. ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. brew install node
+3. npm install
 
 Test execution:
 1. npm test: run all test
