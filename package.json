@@ -11,7 +11,7 @@
    },
    "repository": {
       "type": "git",
-      "url": "git://github.com/kawaiau2/Hk01ApiTest.git"
+      "url": "git://github.com/kawaiau2/ApiTest.git"
    },
    "dependencies": {
       "chai": "^3.5.0",
