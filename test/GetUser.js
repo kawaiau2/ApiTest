@@ -35,7 +35,6 @@ describe('Get User Test', function() {
 	    	expect(res.body.data.avatar).eq("https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg");
 
 	    }));
-	});
 
 	});
 });
