@@ -40,15 +40,5 @@ describe('Login Test', function() {
 
 	    }));
 
-	    it('should login unsuccessfully with wrong invalid Credentials', Q.async(function*() {
-	    	let res = yield requestMethod.post(apiLogin, {
-	        	email: "wrongusername",
-	        	password: "cityslicka"
-	        });
-
-	        expect(res.status, 'Status').eql(400);
-	        expect(res.body.error).eq("Invalid Credentials");
-
-	    }));
 	});
 });
