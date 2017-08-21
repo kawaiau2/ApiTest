@@ -4,8 +4,8 @@
    "description": "API test for getting user list and login",
    "scripts": {
       "test": "mocha -t 120000",
-      "smoke": "mocha --grep '@smoke' || :",
-      "regression": "mocha --grep '@regression' || :",
+      "smoke": "mocha --grep '@smoke'",
+      "regression": "mocha --grep '@regression'",
       "getUser": "mocha ./test/GetUser",
       "loginTest": "mocha ./test/Login"
    },

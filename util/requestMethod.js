@@ -7,9 +7,8 @@ require('../util/common');
 let targetLink = "https://reqres.in/api";
 
 module.exports = {
-  request: request,
   get: getRequest,
-  post: postRequest,
+  post: postRequest
 };
 
 function request() {
