@@ -30,8 +30,8 @@ describe('Get User Test', function() {
 	    	let res = yield requestMethod.get(`${apiUsers}/1`);
 
 	        expect(res.body.data.id).eq(1);
-	        expect(res.body.data.first_name).eq("george");
-	    	expect(res.body.data.last_name).eq("bluth");
+	        expect(res.body.data.first_name).eq("George");
+	    	expect(res.body.data.last_name).eq("Bluth");
 	    	expect(res.body.data.avatar).eq("https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg");
 
 	    }));
