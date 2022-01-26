@@ -12,8 +12,8 @@ describe('Get User Test', function() {
 	        });
 
 	        expect(res.status, 'Status').eql(200);
-	        expect(res.body.page).eq("3");
-	        expect(res.body.per_page).eq(3);
+	        expect(res.body.page).eq(3);
+	        expect(res.body.per_page).eq(6);
 	        expect(res.body.total).to.exist;
 	        expect(res.body.total_pages).to.exist;
 
