@@ -4,7 +4,7 @@
 require('../util/common');
 
 //variant
-let targetLink = "https://reqres.in/api";
+let targetLink = "http://localhost:3000";
 
 module.exports = {
   get: getRequest,
@@ -15,11 +15,12 @@ function request() {
 	return supertest(targetLink);
 }
 
-function getRequest(path, query, token) {
-	var header = {
-    'Content-Type': 'application/json'
-	};
-
+function getRequest(path, query, header, token) {
+	// var header = {
+    // 'Content-Type': 'application/json'
+	// };
+	header.Connection = 'keep-alive';
+	header.Accept = '*/*';
 	if (token !== undefined)
     	header.Authorization = token;
     if (path != undefined)
